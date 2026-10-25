@@ -1,0 +1,223 @@
+---
+name: Luminous Precision
+colors:
+  surface: '#0e1321'
+  surface-dim: '#0e1321'
+  surface-bright: '#343948'
+  surface-container-lowest: '#090e1c'
+  surface-container-low: '#161b2a'
+  surface-container: '#1a1f2e'
+  surface-container-high: '#252a39'
+  surface-container-highest: '#303444'
+  on-surface: '#dee2f6'
+  on-surface-variant: '#bdc8d1'
+  inverse-surface: '#dee2f6'
+  inverse-on-surface: '#2b303f'
+  outline: '#87929a'
+  outline-variant: '#3e484f'
+  surface-tint: '#7bd0ff'
+  primary: '#8ed5ff'
+  on-primary: '#00354a'
+  primary-container: '#38bdf8'
+  on-primary-container: '#004965'
+  inverse-primary: '#00668a'
+  secondary: '#b4c5ff'
+  on-secondary: '#002a78'
+  secondary-container: '#0053db'
+  on-secondary-container: '#cdd7ff'
+  tertiary: '#4ee6aa'
+  on-tertiary: '#003825'
+  tertiary-container: '#22c990'
+  on-tertiary-container: '#004e35'
+  error: '#ffb4ab'
+  on-error: '#690005'
+  error-container: '#93000a'
+  on-error-container: '#ffdad6'
+  primary-fixed: '#c4e7ff'
+  primary-fixed-dim: '#7bd0ff'
+  on-primary-fixed: '#001e2c'
+  on-primary-fixed-variant: '#004c69'
+  secondary-fixed: '#dbe1ff'
+  secondary-fixed-dim: '#b4c5ff'
+  on-secondary-fixed: '#00174b'
+  on-secondary-fixed-variant: '#003ea8'
+  tertiary-fixed: '#68fcbf'
+  tertiary-fixed-dim: '#45dfa4'
+  on-tertiary-fixed: '#002114'
+  on-tertiary-fixed-variant: '#005137'
+  background: '#0e1321'
+  on-background: '#dee2f6'
+  surface-variant: '#303444'
+typography:
+  headline-xl:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 56px
+    fontWeight: '800'
+    lineHeight: 64px
+    letterSpacing: -0.03em
+  headline-xl-mobile:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 36px
+    fontWeight: '800'
+    lineHeight: 44px
+    letterSpacing: -0.02em
+  headline-lg:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 40px
+    fontWeight: '700'
+    lineHeight: 48px
+    letterSpacing: -0.025em
+  headline-lg-mobile:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 28px
+    fontWeight: '700'
+    lineHeight: 36px
+    letterSpacing: -0.02em
+  headline-md:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 24px
+    fontWeight: '600'
+    lineHeight: 32px
+    letterSpacing: -0.015em
+  title-sm:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 18px
+    fontWeight: '600'
+    lineHeight: 26px
+    letterSpacing: -0.01em
+  body-lg:
+    fontFamily: Inter
+    fontSize: 16px
+    fontWeight: '400'
+    lineHeight: 26px
+    letterSpacing: -0.005em
+  body-md:
+    fontFamily: Inter
+    fontSize: 14px
+    fontWeight: '400'
+    lineHeight: 22px
+  body-sm:
+    fontFamily: Inter
+    fontSize: 12px
+    fontWeight: '400'
+    lineHeight: 18px
+  code-badge:
+    fontFamily: JetBrains Mono
+    fontSize: 12px
+    fontWeight: '500'
+    lineHeight: 16px
+    letterSpacing: 0.02em
+  metric-display:
+    fontFamily: JetBrains Mono
+    fontSize: 32px
+    fontWeight: '700'
+    lineHeight: 36px
+    letterSpacing: -0.02em
+  label-caps:
+    fontFamily: JetBrains Mono
+    fontSize: 11px
+    fontWeight: '600'
+    lineHeight: 14px
+    letterSpacing: 0.08em
+rounded:
+  sm: 0.25rem
+  DEFAULT: 0.5rem
+  md: 0.75rem
+  lg: 1rem
+  xl: 1.5rem
+  full: 9999px
+spacing:
+  gutter: 1.5rem
+  gutter-sm: 1rem
+  margin: 4rem
+  margin-tablet: 2rem
+  margin-mobile: 1.25rem
+  space-xs: 0.25rem
+  space-sm: 0.5rem
+  space-md: 1rem
+  space-lg: 1.5rem
+  space-xl: 2.5rem
+  space-2xl: 4rem
+---
+
+## Brand & Style
+This design system articulates the professional identity of an elite QA Automation Engineer and Software Development Engineer in Test (SDET). The aesthetic merges high-precision engineering with sleek modern tech sensibilities: structural dark-mode depth, cold-luminescent accents, and architectural typography. It rejects chaotic neon cyberpunk in favor of refined, frosty instrument panels, calibrated metrics displays, and translucent technical layering.
+
+The visual style synthesizes **Glassmorphism** and **Modern Dark-Mode Precision**:
+- **Frosted Glass Cards:** Semi-translucent panels floating above dark atmospheric backdrops, finished with razor-sharp 1px luminous edge borders.
+- **Instrument-Grade Contrast:** Deep slate navy backdrops paired with radiant frosty ice cyan and electric cobalt glow accents.
+- **Engineered Legibility:** Rigorous visual order built for rapid parsing by hiring directors, VP-level engineering leaders, and system architects.
+
+## Colors
+The palette is built upon a layered dark-spectrum hierarchy that simulates high-spec command interfaces and code IDEs.
+
+- **Primary (`#38bdf8` - Frosty Ice Cyan):** Serves as the primary focal luminance—used for live status indicators, key automation metrics, active filter chips, interactive hover outlines, and prominent code identifiers.
+- **Secondary (`#2563eb` - Electric Cobalt):** Delivers structural depth and energy—applied to primary CTA gradients, interactive timeline nodes, focused rings, and background ambient radial flares.
+- **Tertiary (`#34d399` - Emerald Signal):** Reserved strictly for positive test assertions (e.g., `100% Pass Rate`, `0 Flaky Tests`, CI/CD build green lights).
+- **Neutral (`#0a0f1d` - Deep Void Slate):** The bedrock of the interface. Tiered into tonal sub-layers:
+  - Canvas Base: `#070a13`
+  - Layer 1 (Card/Dock Base): `#0d1527` (with `backdrop-filter: blur(16px)` and opacity)
+  - Layer 2 (Elevated Panels/Dropdowns): `#131f38`
+  - Structural Borders: `rgba(56, 189, 248, 0.14)` (resting) to `rgba(56, 189, 248, 0.45)` (active hover)
+  - Text Muted: `#94a3b8`
+  - Text Pure: `#f8fafc`
+
+## Typography
+The system enforces a dual-discipline typographic rhythm:
+- **Display & Headings (Plus Jakarta Sans):** Delivers clean geometry, confident executive authority, and tight letter-tracking.
+- **Narrative & Specifications (Inter):** High-efficiency neutral grotesque for narrative descriptions, project scopes, and credentials.
+- **Code, Architecture & Metrics (JetBrains Mono):** Reserved for technical metadata, execution times, coverage percentages, framework tags (e.g., `Playwright`, `Cypress`, `Selenium`, `TestNG`), and system status badges.
+
+Large display treatments take subtle gradient fills from pure white (`#ffffff`) at top to icy slate (`#cbd5e1`) at baseline for physical presence.
+
+## Layout & Spacing
+The layout follows a responsive 12-column fluid grid system bounded by a maximum width of `1280px` for optimal viewing on ultra-wide developer displays.
+
+- **Breakpoints:**
+  - **Desktop (1024px+):** 12 columns, `1.5rem` (24px) gutters, and `4rem` outer canvas padding.
+  - **Tablet (768px – 1023px):** 8 columns, `1rem` (16px) gutters, `2rem` outer margins. Side-by-side matrices collapse to 2-column card groupings.
+  - **Mobile (< 768px):** 4 columns, `1rem` gutters, `1.25rem` outer margins. Interactive docks collapse into fixed floating bottom sheets.
+
+Vertical rhythm is governed by a strict base-8 scale (`space-xs` = 4px, `space-sm` = 8px, `space-md` = 16px, `space-lg` = 24px, `space-xl` = 40px, `space-2xl` = 64px) to ensure rigorous structural consistency across complex metric widgets.
+
+## Elevation & Depth
+Depth is constructed through atmospheric dark translucency, luminous refraction, and targeted colored halos rather than muddy shadows:
+
+- **Surface Base (Level 0):** Pure dark abyss `#070a13` with subtle 400px radial gradient orbs (`rgba(37, 99, 235, 0.08)` and `rgba(56, 189, 248, 0.05)`) positioned dynamically behind focal points.
+- **Frosted Panels (Level 1):** Surface container background of `rgba(13, 21, 39, 0.65)` layered with `backdrop-filter: blur(16px)` and an internal 1px border of `rgba(56, 189, 248, 0.15)`.
+- **Raised Interactive Cards (Level 2):** In active or hovered states, background elevates to `rgba(19, 31, 56, 0.85)` with a boundary border of `rgba(56, 189, 248, 0.45)` and an exterior diffuse glow: `0 8px 32px -4px rgba(37, 99, 235, 0.25), 0 0 12px 0 rgba(56, 189, 248, 0.15)`.
+- **Floating HUD & Contact Dock (Level 3):** Background of `rgba(10, 15, 29, 0.88)` with `backdrop-filter: blur(24px)`, elevated drop shadow `0 20px 48px rgba(0, 0, 0, 0.6)`, and a top-edge highlight (`border-top: 1px solid rgba(255, 255, 255, 0.2)`).
+
+## Shapes
+A unified **Rounded** posture (`0.5rem` / 8px base) balances engineering crispness with contemporary UI fluidity:
+- Standard interactive elements, code blocks, and metrics modules utilize `0.5rem` (8px).
+- Showcase cards, timeline entries, and large modals adopt `rounded-lg` (`1rem` / 16px).
+- Pills, status indicators, dynamic chip filters, and floating contact docks leverage pill contours (`9999px`) to create an ergonomic contrast against rectangular telemetry grids.
+
+## Components
+
+### Hero Status Badge & Live Telemetry
+- **Resting:** Pill container with `rgba(56, 189, 248, 0.08)` fill and 1px border `rgba(56, 189, 248, 0.25)`. Contains a pulsing emerald ping circle (`#34d399`) indicating availability, alongside crisp label text (`label-caps` in JetBrains Mono): `STATUS: READY FOR SDET & AUTOMATION ROLES`.
+
+### Buttons & Interactive Triggers
+- **Primary Action (Call to Action):** Linear gradient fill (`135deg, #2563eb 0%, #38bdf8 100%`) with pure white text, semi-bold typography, and subtle cyan outer bloom. On hover, background shifts brightness and scales up (`scale: 1.02`).
+- **Secondary / Ghost Action:** Translucent slate background (`rgba(56, 189, 248, 0.05)`), 1px border (`rgba(56, 189, 248, 0.25)`), text in `#38bdf8`. Hover state fills to `rgba(56, 189, 248, 0.15)` with increased border luminance.
+
+### Skill Matrices & Category Chips
+- Organized in modular cards with monospace category headers (e.g., `// 01 AUTOMATION FRAMEWORKS`, `// 02 CI/CD & DEVOPS`).
+- **Skill Chips:** Pill-shaped capsules with subtle background `rgba(255, 255, 255, 0.03)` and `rgba(148, 163, 184, 0.2)` borders.
+- **Active / Focused Chip:** Background switches to `rgba(56, 189, 248, 0.12)`, text to `#38bdf8`, and border illuminates with `rgba(56, 189, 248, 0.5)`.
+
+### Project Showcase & QA Architecture Cards
+- **Structure:** Frosted glass panels featuring an upper split: left side holds the architectural problem statement and execution narrative; right side features a dedicated telemetry block showing QA outcomes (`metric-display` JetBrains Mono figures: `+84% TEST VELOCITY`, `0% REGRESSION LEAKAGE`).
+- **Code / Snippet Drawers:** Embedded preview boxes using `#070a13` background, 1px perimeter border, syntax highlighted in ice cyan, emerald, and electric blue, with a 1-click clipboard copy chip.
+
+### Experience Timeline
+- **Track & Rail:** Vertical line in `rgba(56, 189, 248, 0.15)` running beside company nodes.
+- **Nodes:** Geometric circular icons with an inner cyan dot and concentric glow ring.
+- **Content Blocks:** Elevated card containing job title, company name in bold, tenure tag in `JetBrains Mono` label format, and scannable bullet points prefixed with custom glowing chevrons (`>`).
+
+### Floating Contact Dock
+- Anchored at bottom viewport center.
+- Frosted dark pill container (`backdrop-filter: blur(24px)`) containing quick-access links (GitHub, LinkedIn, Resume PDF, and Interactive Email trigger).
+- Icons use monochromatic `#94a3b8` transitioning smoothly to `#38bdf8` with a soft under-glow on mouse hover.

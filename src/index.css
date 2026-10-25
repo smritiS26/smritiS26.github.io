@@ -1,0 +1,118 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-heading: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+
+  --color-canvas: #070a13;
+  --color-surface-base: #0e1321;
+  --color-surface-card: #0d1527;
+  --color-surface-elevated: #131f38;
+  --color-surface-high: #1a1f2e;
+  --color-surface-highest: #252a39;
+  --color-cyan-glow: #38bdf8;
+  --color-cobalt-glow: #2563eb;
+  --color-emerald-signal: #34d399;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: #070a13;
+    color: #dee2f6;
+    font-family: var(--font-sans);
+  }
+
+  body {
+    overflow-x: hidden;
+    background-color: #070a13;
+  }
+
+  /* Custom precision scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #070a13;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #1e293b;
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #38bdf8;
+  }
+}
+
+/* Luminous Glow and Precision Utilities */
+.glass-panel {
+  background: rgba(13, 21, 39, 0.72);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(56, 189, 248, 0.14);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-panel:hover {
+  border-color: rgba(56, 189, 248, 0.38);
+  box-shadow: 0 8px 32px -4px rgba(37, 99, 235, 0.2), 0 0 16px 0 rgba(56, 189, 248, 0.12);
+}
+
+.glass-dock {
+  background: rgba(10, 15, 29, 0.88);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(56, 189, 248, 0.18);
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.65), 0 0 1px 1px rgba(255, 255, 255, 0.08);
+}
+
+.glow-btn-primary {
+  background: linear-gradient(135deg, #2563eb 0%, #38bdf8 100%);
+  color: #ffffff;
+  box-shadow: 0 0 20px -3px rgba(56, 189, 248, 0.4);
+  transition: all 0.2s ease;
+}
+
+.glow-btn-primary:hover {
+  box-shadow: 0 0 28px 0 rgba(56, 189, 248, 0.65);
+  transform: translateY(-1px);
+}
+
+.glow-btn-secondary {
+  background: rgba(56, 189, 248, 0.06);
+  border: 1px solid rgba(56, 189, 248, 0.28);
+  color: #38bdf8;
+  transition: all 0.2s ease;
+}
+
+.glow-btn-secondary:hover {
+  background: rgba(56, 189, 248, 0.16);
+  border-color: rgba(56, 189, 248, 0.6);
+  box-shadow: 0 0 16px rgba(56, 189, 248, 0.2);
+}
+
+.glow-badge-emerald {
+  background: rgba(52, 211, 153, 0.1);
+  border: 1px solid rgba(52, 211, 153, 0.3);
+  color: #34d399;
+}
+
+.glow-pill-cyan {
+  background: rgba(56, 189, 248, 0.08);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  color: #8ed5ff;
+}
+
+.text-gradient-white {
+  background: linear-gradient(180deg, #ffffff 15%, #cbd5e1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-cyan {
+  background: linear-gradient(135deg, #ffffff 0%, #7bd0ff 60%, #38bdf8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
